@@ -14,7 +14,7 @@ cm <- makeCacheMatrix(toeplitz(1:5))
 print(round(cacheSolve(cm))) # Calculating inverse matrix
 print(round(cacheSolve(cm))) #this print statement returns the first i (line 2)
 cm$set(toeplitz(1:3))# Overwrite old data with new matrix
-print(round(cacheSolve(cm))) #Calculate inverse of new matrix
+print(round(cacheSolve(cm))) #Calculate inverse of new matrix 
 print(round(cacheSolve(cm)))
 
 
