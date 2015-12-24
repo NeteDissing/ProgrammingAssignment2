@@ -10,12 +10,12 @@
 # We then redefine the matrix to test the setting/resetting functionality followed by 
 # calculation and caching of the new toeplitz matrix.
 
-# cm <- makeCacheMatrix(toeplitz(1:5))
-# print(round(cacheSolve(cm))) # Calculating inverse matrix
-# print(round(cacheSolve(cm))) #this print statement returns the first i (line 2)
-# cm$set(toeplitz(1:3))# Overwrite old data with new matrix
-# print(round(cacheSolve(cm))) Calculate inverse of new matrix
-# print(round(cacheSolve(cm)))
+cm <- makeCacheMatrix(toeplitz(1:5))
+print(round(cacheSolve(cm))) # Calculating inverse matrix
+print(round(cacheSolve(cm))) #this print statement returns the first i (line 2)
+cm$set(toeplitz(1:3))# Overwrite old data with new matrix
+print(round(cacheSolve(cm))) #Calculate inverse of new matrix
+print(round(cacheSolve(cm)))
 
 
 ## This function creates a special matrix object and this function can cache the inverse of the matrix.
